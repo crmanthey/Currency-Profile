@@ -4,7 +4,7 @@ import { NbThemeService } from '@nebular/theme';
 import { ElectricityService } from '../../../@core/data/electricity.service';
 
 @Component({
-  selector: 'ngx-electricity',
+  selector: 'ngx-trends',
   styleUrls: ['./electricity.component.scss'],
   templateUrl: './electricity.component.html',
 })

@@ -30,7 +30,7 @@ export class EchartsPieComponent implements AfterViewInit, OnDestroy {
         legend: {
           orient: 'vertical',
           left: 'left',
-          data: ['USA', 'Germany', 'France', 'Canada', 'Russia'],
+          data: ['A', 'B', 'C', 'D', 'E'],
           textStyle: {
             color: echarts.textColor,
           },
@@ -42,11 +42,11 @@ export class EchartsPieComponent implements AfterViewInit, OnDestroy {
             radius: '80%',
             center: ['50%', '50%'],
             data: [
-              { value: 335, name: 'Germany' },
-              { value: 310, name: 'France' },
-              { value: 234, name: 'Canada' },
-              { value: 135, name: 'Russia' },
-              { value: 1548, name: 'USA' },
+              { value: 335, name: 'B' },
+              { value: 310, name: 'C' },
+              { value: 234, name: 'D' },
+              { value: 135, name: 'E' },
+              { value: 1548, name: 'A' },
             ],
             itemStyle: {
               emphasis: {
@@ -77,5 +77,5 @@ export class EchartsPieComponent implements AfterViewInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.themeSubscription.unsubscribe();
-  }
+ }
 }

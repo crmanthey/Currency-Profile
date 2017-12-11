@@ -1,8 +1,8 @@
 <nb-card size="large">
   <div class="consumption-table">
     <div class="table-header">
-      <div>Electricity</div>
-      <div class="subtitle">Consumption</div>
+      <div>Price</div>
+      <div class="subtitle">Fluctuation</div>
     </div>
 
     <nb-tabset fullWidth>
@@ -13,7 +13,7 @@
             <span class="delta" [ngClass]="{ 'down': month.down }">{{ month.delta }}</span>
           </div>
           <div class="results">
-            <b>{{ month.kWatts }}</b> kWh / <b>{{ month.cost }}</b> USD
+            <b>{{ month.kWatts }}</b> ETH / <b>{{ month.cost }}</b> USD
           </div>
         </div>
       </nb-tab>
